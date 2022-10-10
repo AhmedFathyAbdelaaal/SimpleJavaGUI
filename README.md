@@ -134,3 +134,29 @@ Then the frame's visibility is set to True so it appears. This is done with "fra
         frame.setVisible(true); //setting visibility for the frame.
     }
 ```
+## Onto the Public Static Void Main in which we start our GUI:
+
+Here not much is done. just creating the GUI which is handled by the constructor. If this is to be written it would be written before the constructor itself.  
+```java
+public static void main(String[] args) {
+        new GUI(); //Creating the GUI.
+
+    }
+```
+
+## Finally for the Action Performer
+
+Simply put, the count is incremeanted & then the label is changed with the new count number.
+
+```java
+//Action performers.
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        count++;
+        label.setText("Number of Clicks : " + count); //what happens when the button is clicked. label changes to the origial text with a different number of count.
+    }
+```
+
+### And thats the end of the simple GUI.
+
+It is very simple. and it fits in one file, i recommend trying it as it gives an ideo of how GUIs are built in JAVA.
